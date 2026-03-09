@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  display: grid;
+  gap: 20px;
+  width: 40%;
+  border: 3px rgb(0, 0, 0) solid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+input {
+  width: 90%;
+  height: 40px;
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+p {
+  color: #000000;
+  font-size: 40px;
+}
+
+button {
+  width: 90%;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  background: #000000;
+  color: white;
+  cursor: pointer;
+}
+
+section button:hover {
+  background: #0b670a;
+  transition: 200ms;
+}
+
+.error {
+  background: red;
+}
+
+.NoteError {
+  color: red;
+}
