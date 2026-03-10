@@ -16,6 +16,10 @@ function handleAction() {
   if (notes.length !== quantity) {
     document.getElementById("text").style.display = "block";
     notesDiv.innerHTML = "";
+    if (quantity > 6) {
+      alert("Esta escrito ai de 1 a 6 notas!");
+      return;
+    }
     for (let i = 1; i <= quantity; i++) {
       const input = document.createElement("input");
       input.type = "number";
@@ -51,7 +55,6 @@ function handleAction() {
 
   result1.textContent = `The mean is ${Number(mean.toFixed(2))}, you are ${status}  `;
 
-  
   result1.classList.remove("NoteError");
   actionBtn.classList.remove("error");
 }

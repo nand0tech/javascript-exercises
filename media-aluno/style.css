@@ -13,7 +13,7 @@ body {
 section {
   display: grid;
   gap: 20px;
-  width: 40%;
+  width: 30%;
   border: 3px rgb(0, 0, 0) solid;
   justify-items: center;
   align-items: center;
@@ -22,7 +22,7 @@ section {
 }
 input {
   width: 90%;
-  height: 40px;
+  height: 30px;
   font-size: 18px;
   margin: 5px;
   padding: 5px;
@@ -31,7 +31,7 @@ input {
 
 p {
   color: #000000;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 button {
@@ -56,4 +56,19 @@ section button:hover {
 
 .NoteError {
   color: red;
+}
+@media (max-width: 600px) {
+  section {
+    width: 90%;
+    min-height: 40px;
+    height: auto;
+  }
+  button {
+    width: 90%;
+    padding: 15px 25px;
+    font-size: 15px;
+  }
+  p {
+    font-size: 30px;
+  }
 }

@@ -9,13 +9,18 @@
 
   <body>
     <section>
-      <input type="number" id="quantity" placeholder="How many notes?" />
+      <input
+        type="number"
+        id="quantity"
+        max="6"
+        placeholder="How many notes?"
+      />
       <p id="text" style="display: none">Whats your grade?</p>
       <div id="notes"></div>
 
       <button id="actionBtn" onclick="handleAction()">Create Notes</button>
 
-      <p id="result">Click to calculate</p>
+      <p id="result">Choose the number of grades from 1 to 6.</p>
     </section>
 
     <script src="script.js"></script>
